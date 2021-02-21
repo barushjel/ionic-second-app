@@ -1,0 +1,10 @@
+<h1>Post</h1>
+<ul class="list-group">
+
+  <li *ngFor = "let posts of dataInformation | async"class="list-group-item">
+    <h2>{{posts.title}}</h2>
+    <p>
+      {{posts.body}}
+    </p>
+  </li>
+</ul>
